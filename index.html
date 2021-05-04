@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatih Delice Web Design</title>  
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title="">Fatih Delice Web Design</a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Ana Sayfa</a></li>
+          <li><a class="nav-link scrollto" href="#about">Hakkında</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a class="buy-tickets scrollto" href="#buy-tickets">Bilet Satın Al</a>
+
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">Bilgisayar Mühendisliği<br><span>Web Tasarım</span> Konferansı</h1>
+      <p class="mb-4 pb-0">10-12 Mayıs, Cumhuriyet Üniversitesi, Sivas</p>
+      <a href="https://www.youtube.com/watch?v=UvhgUliY6LM" class="glightbox play-btn mb-4"></a>
+      <a href="#about" class="about-btn scrollto">Etkinlik Hakkında</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Etkinlik Hakkında</h2>
+            <p>Sivas Cumhuriyet Üniversitesi Mühendislik Fakültesi Bilgisayar Mühendisliği bölümü mezunlarından Fatih Delice HTML konusu
+              hakkında Bilgisayar Mühendisliği öğrencilerine bilgilerini aktaracaktır.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Nerede</h3>
+            <p>Cumhuriyet Üniversitesi, Sivas</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Ne Zaman</h3>
+            <p>Pazartesinden Çarşambaya kadar<br>Saat 12:00-15:00<br>10-12 Mayıs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="buy-tickets" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Bilet Satın Al</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Standart Bilet</h5>
+                <h6 class="card-price text-center">150₺</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Normal Oturma</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Kahve Molası</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Katılım Sertifikası</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Satın Al</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Bilet Satın Al</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="İsim">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="your-email" placeholder="Soyisim">
+                </div>
+                <div class="form-group mt-3">
+                  <select id="ticket-type" name="ticket-type" class="form-select">
+                    <option value="">-- Lütfen Bilet Tipi Seçiniz --</option>
+                    <option value="standard-access">Standart Bilet</option>
+                  </select>
+                </div>
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn">Satın Al</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    </main>
+    <footer id="footer">
+      
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a href="https://fatihdelice.github.io/">Fatih Delice</a>
+        </div>
+      </div>
+    </footer>
+    
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
